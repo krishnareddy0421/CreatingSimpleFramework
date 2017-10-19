@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9E63793B1F98F60B00868CE5 /* CreatingFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E6379391F98F60B00868CE5 /* CreatingFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E6379431F98F62400868CE5 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6379421F98F62400868CE5 /* CustomTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E6379361F98F60B00868CE5 /* CreatingFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CreatingFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E6379391F98F60B00868CE5 /* CreatingFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatingFramework.h; sourceTree = "<group>"; };
 		9E63793A1F98F60B00868CE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E6379421F98F62400868CE5 /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,19 @@
 		9E6379381F98F60B00868CE5 /* CreatingFramework */ = {
 			isa = PBXGroup;
 			children = (
+				9E6379411F98F61100868CE5 /* New Group */,
 				9E6379391F98F60B00868CE5 /* CreatingFramework.h */,
 				9E63793A1F98F60B00868CE5 /* Info.plist */,
 			);
 			path = CreatingFramework;
+			sourceTree = "<group>";
+		};
+		9E6379411F98F61100868CE5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				9E6379421F98F62400868CE5 /* CustomTableCell.swift */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +106,7 @@
 				TargetAttributes = {
 					9E6379351F98F60B00868CE5 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E6379431F98F62400868CE5 /* CustomTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +266,7 @@
 		9E63793F1F98F60B00868CE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +280,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ownApplicationDevelopment.CreatingFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +289,7 @@
 		9E6379401F98F60B00868CE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
